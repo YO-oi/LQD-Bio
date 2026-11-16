@@ -1,0 +1,108 @@
+{
+  "split_seed": 42,
+  "data_layout": "local_data/data/<ebird_code>/<audio_file>",
+  "path_columns": {
+    "rel_path": "relative to local_data root",
+    "filepath": "relative to project root"
+  },
+  "eval_splits": [
+    "eval"
+  ],
+  "bucket_order": [
+    "many",
+    "medium",
+    "few"
+  ],
+  "bucket_thresholds": {
+    "many": {
+      "label_n_min": 100
+    },
+    "medium": {
+      "label_n_min": 20,
+      "label_n_max": 99
+    },
+    "few": {
+      "label_n_max": 19
+    }
+  },
+  "num_samples": {
+    "train": 1214,
+    "test": 161,
+    "eval": 148,
+    "all_assignments": 1523
+  },
+  "num_classes": 12,
+  "num_classes_by_output": {
+    "train": 12,
+    "test": 12,
+    "eval": 12
+  },
+  "num_classes_by_internal_split": {
+    "eval": 12,
+    "test": 12,
+    "train": 12
+  },
+  "internal_split_sample_counts": {
+    "eval": 148,
+    "test": 161,
+    "train": 1214
+  },
+  "bucket_sample_counts": {
+    "train": {
+      "many": 1020,
+      "medium": 191,
+      "few": 3
+    },
+    "test": {
+      "many": 129,
+      "medium": 31,
+      "few": 1
+    },
+    "eval": {
+      "many": 127,
+      "medium": 20,
+      "few": 1
+    }
+  },
+  "bucket_class_counts": {
+    "train": {
+      "many": 3,
+      "medium": 8,
+      "few": 1
+    },
+    "test": {
+      "many": 3,
+      "medium": 8,
+      "few": 1
+    },
+    "eval": {
+      "many": 3,
+      "medium": 8,
+      "few": 1
+    }
+  },
+  "rel_path_empty": {
+    "exists": false,
+    "count": 0
+  },
+  "file_name_duplicates": {
+    "has_duplicates": false,
+    "num_duplicate_values": 0,
+    "examples": []
+  },
+  "rel_path_duplicates": {
+    "has_duplicates": false,
+    "num_duplicate_values": 0,
+    "examples": []
+  },
+  "file_hash_duplicates": {
+    "has_duplicates": false,
+    "num_duplicate_values": 0,
+    "examples": []
+  },
+  "sample_id_duplicates": {
+    "has_duplicates": false,
+    "num_duplicate_values": 0,
+    "examples": []
+  }
+}

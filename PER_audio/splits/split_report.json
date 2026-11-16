@@ -1,0 +1,103 @@
+{
+  "split_seed": 42,
+  "eval_ratio": {
+    "requested": 0.2,
+    "actual": 0.2002333722287048
+  },
+  "bucket_order": [
+    "many",
+    "medium",
+    "few"
+  ],
+  "bucket_thresholds": {
+    "many": {
+      "train_label_n_min": 100
+    },
+    "medium": {
+      "train_label_n_min": 20,
+      "train_label_n_max": 99
+    },
+    "few": {
+      "train_label_n_max": 19
+    }
+  },
+  "num_samples": {
+    "train": 16802,
+    "test": 6854,
+    "eval": 1716,
+    "full_dataset": 25372
+  },
+  "num_classes": 132,
+  "num_classes_by_split": {
+    "train": 132,
+    "test": 116,
+    "eval": 98
+  },
+  "test_eval_contains_unseen_train_classes": {
+    "exists": false,
+    "values": []
+  },
+  "file_name_duplicates": {
+    "has_duplicates": false,
+    "num_duplicate_values": 0,
+    "examples": []
+  },
+  "file_hash_duplicates": {
+    "has_duplicates": false,
+    "num_duplicate_values": 0,
+    "examples": []
+  },
+  "sample_id_duplicates": {
+    "has_duplicates": false,
+    "num_duplicate_values": 0,
+    "examples": []
+  },
+  "rel_path_empty": {
+    "exists": false,
+    "count": 0
+  },
+  "bucket_sample_counts": {
+    "train": {
+      "many": 12871,
+      "medium": 3895,
+      "few": 36
+    },
+    "test": {
+      "many": 4840,
+      "medium": 1880,
+      "few": 134
+    },
+    "eval": {
+      "many": 1215,
+      "medium": 468,
+      "few": 33
+    },
+    "full_dataset": {
+      "many": 18926,
+      "medium": 6243,
+      "few": 203
+    }
+  },
+  "bucket_class_counts": {
+    "train": {
+      "many": 67,
+      "medium": 62,
+      "few": 3
+    },
+    "test": {
+      "many": 58,
+      "medium": 55,
+      "few": 3
+    },
+    "eval": {
+      "many": 50,
+      "medium": 46,
+      "few": 2
+    },
+    "full_dataset": {
+      "many": 67,
+      "medium": 62,
+      "few": 3
+    }
+  }
+}
